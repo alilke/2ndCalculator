@@ -61,11 +61,11 @@ function handleSubmit(){
 
         listOutEmployees();
 
-        $('#fistName').val('');
+        $('#firstName').val('');
         $('#lastName').val('');
         $('#employeeId').val('');
         $('#title').val('');
-        $('#annualSalary').val('');
+        $('#annaulSalary').val('');
     }
 }
 
