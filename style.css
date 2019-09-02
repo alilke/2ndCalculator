@@ -1,0 +1,12 @@
+.yellow{
+    background-color: yellow;
+}
+
+label{
+    width: 100px;
+    display: inline-block;
+}
+
+.error{
+    border: 1px dotted red;
+}
