@@ -1,25 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <script src="jquery.js"></script>
-    <script src="scripts.js"></script>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <script src="jQuery.js" charset="utf-8"></script>
+    <script src="scripts.js" charset="utf-8"></script>
     <link rel="stylesheet" href="style.css"/>
-</head>
-<body>
-    <h1>Salary Calculator</h1>
-    <p>Add Employee</p>
-    <input id="firstName" placeholder ="First Name" type="text"/>
+
+    <title>Salary Calculator</title>
+  </head>
+  <body>
+<header>
+  <h1 id="salaryCalculator">Salary Calculator</h1>
+</header>
+<main>
+    <h2>Add Employee</h2>
+    <input id="employeeNameIn" placeholder ="First Name" type="text"/>
     <input id="lastName" placeholder ="Last Name" type="text"/>
     <input id="employeeId" placeholder ="ID" type="text"/>
     <input id="title" placeholder ="Title" type="text"/>
-    <input id="annaulSalary" placeholder ="Annual Salary" type="number"/>
-</br>
-    <button id="submitBtn">Submit</button>
-<!-- <h1>Employees</h1> -->
-    <ul id="listEmployees"></ul>
+    <input id="yearlySalaryIn" placeholder ="Annual Salary" type="number"/>
+    <button id="addEmployeeButton">Add</button>
+    <h2>Employees</h2>
+<!--if having issues add tbody below-->
+
+    <div id="table">
+      <table>
+        <thead>
+          <p>Employee Table</p>
+          <tr>
+            <th id="FN">First Name</th>
+            <th id="LN">Last Name</th>
+            <th id="ID">Employee ID</th>
+            <th id="T">Title</th>
+            <th id="YS">Yearly Salary</th>
+            <th id="DB"></th>
+
+          </tr>
+        </thead>
+        <!-- <tbody>
+       
+            <td id="FN">FN Test</td>
+
+            <td id="LN"> LN Test</td>
+
+            <td id="ID">ID Test</td>
+
+            <td id="T">Title Test</td>
+
+            <td id="YS">YS Test</td>
+            <td id="DeleteBTN"></td>
+        </tbody> -->
+      </table>
+      </div>
+
+    <!-- <h3> Remaining Yearly Budget: $<span id="remainingYearlyBudgetOut"></span></h3>
+    <h3> Remaining Monthly Budget: $<span id="remainingMonthlyBudgetOut"></span></h3>
+    <h3> Total Yearly Salary: $<span id="totalYearlySalaryOut"></span></h3> -->
+    
+  
+   
+  
+  <ul id="employeeOut">
+  </ul>
+  <ul id="employeeOut2">
+  </ul>
+
+ 
+    <!-- <h3> Remaining Budget: $<span id="remainingBudgetOut"></span></h3>
+    <ul id="content">Check the console for errors!</ul>
+    <script src="scripts/calculations.js" charset="utf-8"></script> -->
+    <h3>Total Monthly Salary: $<span id="totalMonthlySalary"></span></h3>
+
+
 </body>
 </html>

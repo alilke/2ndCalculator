@@ -1,12 +1,65 @@
-.yellow{
-    background-color: yellow;
+
+.errors{
+    color: red;
+}
+ul{
+    margin: 0;
+    padding: 0;
 }
 
-label{
-    width: 100px;
-    display: inline-block;
+li{
+    /* margin: 0; */
+    padding: 0;
 }
 
-.error{
-    border: 1px dotted red;
+table{
+    border: 1px solid black;
+    /* margin: 0 auto; */
+    border-collapse:collapse;
+    height: 40px;
+    width: 850px;
+}
+#tablez{
+    /* border: 1px solid black; */
+    /* margin: 0 auto; */
+    border-collapse:collapse;
+    height: 40px;
+    width: 500px;
+}
+#tablee{
+    /* border: 1px solid black; */
+    /* margin: 0 auto; */
+    border-collapse:collapse;
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+th{
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    padding: 10px;
+    box-sizing: 10px;
+    column-width: 10px;
+}
+
+td{
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    padding: 10px;
+    vertical-align: middle;
+    column-width: 12px;
+    grid-template: 12px;
+
+    
+}
+
+#FN , #LN , #ID , #YS , #T {
+    width: 15%;
+}
+
+#DB, #deleteBTN{
+    width: 10%;
 }
